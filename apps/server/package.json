@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "template server",
+  "main": "index.js",
+  "author": "Ahmad Reza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
