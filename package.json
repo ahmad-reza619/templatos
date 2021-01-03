@@ -1,4 +1,14 @@
 {
   "private": "true",
-  "workspaces": ["apps/server", "apps/client"]
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "client": "yarn workspace client start",
+    "server": "yarn workspace server start",
+    "start": "concurrently 'yarn run client' 'yarn run server'"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
 }
