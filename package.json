@@ -6,6 +6,8 @@
   "scripts": {
     "client": "yarn workspace client start",
     "server": "yarn workspace server start",
+    "lint:client": "yarn workspace client run eslint .",
+    "lint:server": "yarn workspace server run eslint .",
     "start": "concurrently 'yarn run client' 'yarn run server'"
   },
   "devDependencies": {
